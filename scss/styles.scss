@@ -1,0 +1,187 @@
+//Colors
+$white:#fff;
+$black:#000;
+$gray:#565151;
+$pink:#ff7c7c;
+*{
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 760px;
+    margin: 0 auto;
+    max-width: 60%;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}  
+html,body{
+   // background-color: tan;
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 100;
+        .overlay{
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background:url(../images/initial_banner_bg.jpg);
+            background-position-x: center;
+            background-position-y: center;
+            background-repeat: none;
+            background-size:cover;
+            min-height: 100%;
+            min-width: 100%;
+            z-index: -150;
+            filter: blur(15px);
+    }
+    #background_video{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: -50;
+        min-width: 100%;
+        min-height: 100%;
+        //height: 100%;
+        //width: 100%;
+    }
+    .top_header{     
+        transition: background-color .3s ease-in-out;
+        nav{
+            display: flex;
+            justify-content: flex-end;
+
+            a{
+                display: inline-block;
+                color: $white;
+            }
+            //Links watch video 
+            .watch{
+                margin-top: 1.3em; 
+                    a{
+                        border: 2px solid $white;
+                        padding: 8px;
+                        border-radius: 8px;
+                        &:hover{
+                            background-color: rgba(0,0,0,.4);
+                        }
+                    }
+            }
+            //Links language
+            ul{
+                margin: 1.3em 1.5em 0 0.6em;
+                text-transform: uppercase;
+                display: inline-block;
+                padding: 0;
+                .active{
+                    border: 2px solid $white;
+                    padding: 8px;
+                    border-radius: 8px;
+                    &:hover{
+                        background-color: rgba(0,0,0,.4);
+                    }
+                }
+                img{
+                    float: left;
+                    width: 18px;
+                    margin: 0 0.3em 0 0;
+                    max-width: 100%;
+                }
+                li:not(.active){
+                    a{
+                        font-size: .7em;
+                        padding: 0;
+                        float: right;
+                        &:hover{
+                            color: $gray;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .intro{
+        text-align: center;
+        color: $white;
+        position: absolute;
+        top: 18%;
+        right: 0;
+        left: 0;
+        h1{
+            margin: .67em;
+            font-size: 2.5em;
+            font-weight: 500;
+            img{
+                display: inline-block;
+                width: 550px;
+                min-width: 23%;
+                max-height: 40%;
+                max-width: 80%;
+                margin:0.3em 0 0 0;
+            }
+        }
+        p{
+            font-size: 2.5em;
+            font-weight:500;
+            margin-top: -.4em;
+        }
+        //Download button
+        .download_button{
+            img{
+                margin: 0 .5em 0 .5em;
+                width: 165px;
+            }
+        }
+        //Down
+    }
+    a.down{
+        color: $white;
+        font-size: 2em;
+        position: absolute;
+        //left: 0;
+        //right: 0;
+        bottom: 1.5em;
+        width: 100%;
+        text-align: center;
+    }
+}
+.footer{
+    padding: 1.5em 0;
+    display: flex;
+    //justify-content: space-around;
+    .footer_column{
+        text-align: center;
+        width: 20%;
+    }
+    h3{
+        text-transform: uppercase;
+        color: $pink;
+        font-size: .85em;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        li>a{
+            display: inline-block;
+            color: $gray;
+            margin-bottom: .6em ;
+        }
+        li{
+            a:hover{
+                color: $pink;
+            }
+        }
+    }
+}
