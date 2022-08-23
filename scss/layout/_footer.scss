@@ -1,0 +1,25 @@
+.footer{
+    display: flex;
+    text-align: center;
+    padding: 1.5em 0;
+    .footer_column{
+        width: 20%;
+        h3{
+            font-size: .85em;
+            text-transform: uppercase;
+            color: $pink;
+        }
+        ul{
+            li a{
+                display: inline-block;
+                text-decoration: none;
+                margin-bottom: .6em;
+                color: $gray;
+                &:hover{
+                    color: $pink    ;
+                }
+            }
+        }
+
+    }
+}

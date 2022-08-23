@@ -1,0 +1,131 @@
+.banner{
+    position: relative;
+    z-index: 100;
+    height: 100%;
+    video{
+        min-width: 100%;
+        min-height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -150;
+    }
+
+    .overlay{
+        background: url(../images/initial_banner_bg.jpg);
+        background-position-x: center;
+        background-position-y: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -150;
+        filter: blur(15px);
+    }
+    a{
+        text-decoration: none;
+        color: $white;
+    }
+    //Header styles
+    .top_header{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        nav{
+            float:right;
+            div{
+                float: left;
+                margin: 1.3em .5em 0 0.6em;
+                border: 2px solid $white;
+                padding: 8px;
+                border-radius: .5em;
+                &:hover{
+                    background-color: $black;
+                }
+            }   
+            ul{
+                float: left;
+                margin: 1.3em 1.5em 0 0;
+                .active{
+                    border: 2px solid $white;
+                    padding: 8px;
+                    border-radius: .5em;
+                    img{
+                        float: left;
+                        width: 18px;
+                        margin-right: 0.3em;
+                    }
+                    &:hover{
+                        background-color: $black;
+                    }
+                }
+                li:not(.active)>a{
+                    float:right;
+                    text-transform: uppercase;
+                    font-size: .7em;
+                    color: $white;
+                    &:hover{
+                        color: $gray;
+                    }
+                }
+            }
+        }
+    }
+    .intro{
+        text-align: center;
+        position: absolute;
+        top: 18%;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        h1{
+            font-size: 2.5em;
+            font-weight: 500;
+            color: $white;
+            img{
+                width: 550px;
+                min-width: 23%;
+                max-width: 80%;
+                margin-top: .3em;
+            }
+        }
+        p{
+            font-size: 2.5em;
+            font-weight: 500;
+            margin-top: -.4em;
+            color: $white;
+        }
+        .download_button{
+            img{
+                width: 165px;
+            }
+            a.first_child{
+                margin-right: .5em;
+            }
+            a.second_child{
+                margin-left: .5em;
+            }
+        }
+        .down{
+            font-size: 2em;
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 1.5em;
+        }
+    }
+}

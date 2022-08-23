@@ -1,0 +1,21 @@
+//Colors
+$white:#fff;
+$black:#000;
+$gray:#565151;
+$pink:#ff7c7c;
+.wrapper{
+    width: 760px;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.clearfix::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.clearfix::before{
+    display: table;
+    clear: both;
+}

@@ -1,0 +1,30 @@
+@media screen and (max-width: 768px) {
+  .wrapper {
+    max-width: 90%; }
+
+  .banner .intro {
+    top: 32%; }
+    .banner .intro h1 {
+      font-size: 1.6em; }
+      .banner .intro h1 img {
+        width: 300px; }
+    .banner .intro p {
+      font-size: 1.5em; }
+    .banner .intro .download_button {
+      margin-top: 2.5em;
+      padding: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .banner .intro .download_button a.first_child {
+        margin-right: 0; }
+      .banner .intro .download_button a.second_child {
+        margin-left: 0; }
+    .banner .intro .down {
+      bottom: .3em; } }
+
+/*# sourceMappingURL=responsive.css.map */

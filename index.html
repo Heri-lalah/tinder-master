@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tinder</title>
     <!--Styles-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -12,21 +13,22 @@
 
     <!--Fontawesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+	
 </head>
 <body>
     <section class="banner">
         <div class="overlay"></div>
-        <video autoplay loop muted id="background_video">
-            <source src="video/The best of nature.mp4" type="video/mp4"></source>
+        <video autoplay loop muted id="video_background">
+			<source src="video/The best of nature.mp4" type="video/mp4"></source>
         </video>
-        <header class="top_header">
+        <header class="top_header clearfix">
             <nav>
-                <div class="watch">
-                    <a href="#">Watch Full Video</a>
+                <div>
+                    <a href="#" class="watch">Watch Full Video</a>
                 </div>
                 <ul>
                     <li class="active">
-                        <a href="#"><img src="images/usa.png" alt="English" title="English"><span>EN</span></a>
+                        <a href="#"><img src="images/usa.png" alt="English" title="English">EN</a>
                     </li>
                     <li><a href="#">Portugese</a></li>
                     <li><a href="#">French</a></li>
@@ -37,23 +39,22 @@
         <!--Intro-->
         <div class="intro">
             <div class="wrapper">
-                <h1>
-                    <span>Introducing</span><br>
-                    <img src="images/tindersocial.png" alt="Tinder Social" title="Tinder Social">
-                </h1>
-                <p>What are you doing tonight?</p>
+                <h1>Introducing<br><img src="images/tindersocial.png" alt="Tinder Social" title="Tinder Social"></h1>
+                
+                <p>What are you doing tonight ?</p>
                 
                 <!--Download button-->
                 <div class="download_button">
-                    <a href="#">
+                    <a href="#" class="first_child">
                         <img src="images/appstore.png" alt="Download Ios Application" title="Download Ios Application">
                     </a>
-                    <a href="#"><img src="images/playstore.png" alt="Download Android Application" title="Download Android Application"></a>
+                    <a href="#" class="second_child"><img src="images/playstore.png" alt="Download Android Application" title="Download Android Application"></a>
                 </div>
+                
+                <!--Fontawesome-->
+                <a href="#" class="down bounce"><i class="fas fa-chevron-down bounce"></i></a>
             </div>
         </div>
-        <!--Fontawesome-->
-        <a href="#" class="down"><i class="fas fa-chevron-down"></i></a>
     </section>
 
     <footer class="footer">
