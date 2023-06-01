@@ -31,15 +31,17 @@ ul {
   z-index: 100;
   height: 100%; }
   .banner video {
-    min-height: 102vh;
-    min-width: 100vw;
-    width: auto;
-    height: auto;
+    min-width: 100%;
+    max-height: 100vh;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
     z-index: -150; }
   .banner .overlay {
     background: url(../images/initial_banner_bg.jpg);
@@ -57,8 +59,7 @@ ul {
     width: auto;
     height: auto;
     z-index: -150;
-    filter: blur(15px);
-    -webkit-filter: blur(15px); }
+    filter: blur(15px); }
   .banner a {
     text-decoration: none;
     color: #fff; }
@@ -132,12 +133,6 @@ ul {
       bottom: 1.5em; }
 
 .footer {
-  z-index: 1000;
-  background-color: aliceblue;
-  position: absolute;
-  bottom: -50;
-  left: 0;
-  right: 0;
   display: flex;
   text-align: center;
   padding: 1.5em 0; }
@@ -164,29 +159,5 @@ ul {
     transform: translateY(-20px); } }
 .bounce {
   animation: bounce 2s infinite; }
-
-@media screen and (max-width: 768px) {
-  .wrapper {
-    max-width: 90%; }
-
-  .banner .intro {
-    top: 32%; }
-    .banner .intro h1 {
-      font-size: 1.6em; }
-      .banner .intro h1 img {
-        width: 300px; }
-    .banner .intro p {
-      font-size: 1.5em; }
-    .banner .intro .download_button {
-      margin-top: 2.5em;
-      padding: 0;
-      display: flex;
-      flex-direction: column; }
-      .banner .intro .download_button a.first_child {
-        margin-right: 0; }
-      .banner .intro .download_button a.second_child {
-        margin-left: 0; }
-    .banner .intro .down {
-      bottom: .3em; } }
 
 /*# sourceMappingURL=styles.css.map */
